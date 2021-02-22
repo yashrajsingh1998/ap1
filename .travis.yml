@@ -17,7 +17,7 @@ cache:
     
     
 before_install:
-  - sudo apt install -y yasm 
+  - sudo apt install yasm 
   - cd thirdparty/ffmpeg
   - sh ./configure --enable-pic
   - make -j"$(nproc)"
